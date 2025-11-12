@@ -1,0 +1,139 @@
+:root {
+    --voks-primary: #2c3e50;
+    --voks-accent: #3498db;
+    --voks-light: #ecf0f1;
+    --voks-dark: #1c2833;
+}
+
+body {
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--voks-dark);
+}
+
+.sidebar {
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--voks-primary) 0%, #1f2d3a 100%);
+    color: var(--voks-light);
+    width: 260px;
+    position: fixed;
+}
+
+.sidebar .navbar-brand {
+    color: var(--voks-light);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.sidebar .nav-link {
+    color: #b0c4d4;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar .nav-link i {
+    width: 22px;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+    background-color: rgba(52, 152, 219, 0.2);
+    color: #ffffff;
+}
+
+.topbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e6ecf1;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.content-wrapper {
+    margin-left: 260px;
+    padding: 2rem;
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px -15px rgba(44, 62, 80, 0.4);
+}
+
+.btn-primary {
+    background-color: var(--voks-accent);
+    border-color: var(--voks-accent);
+}
+
+.btn-primary:hover {
+    background-color: #2d80b9;
+    border-color: #2d80b9;
+}
+
+.table thead {
+    background-color: var(--voks-primary);
+    color: #ffffff;
+}
+
+.badge-status {
+    font-size: 0.75rem;
+    text-transform: capitalize;
+}
+
+.badge-status.menginap {
+    background-color: #3498db;
+}
+
+.badge-status.menunggu_pengecekan {
+    background-color: #f39c12;
+}
+
+.badge-status.selesai {
+    background-color: #2ecc71;
+}
+
+.status-room {
+    padding: 0.35rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.status-room.kosong {
+    background-color: rgba(46, 204, 113, 0.2);
+    color: #27ae60;
+}
+
+.status-room.terisi {
+    background-color: rgba(52, 152, 219, 0.2);
+    color: #2980b9;
+}
+
+.status-room.maintenance {
+    background-color: rgba(231, 76, 60, 0.2);
+    color: #c0392b;
+}
+
+.auth-background {
+    background: radial-gradient(circle at top left, rgba(52, 152, 219, 0.15), transparent),
+        radial-gradient(circle at bottom right, rgba(44, 62, 80, 0.2), transparent),
+        #f5f7fa;
+    padding: 3rem 1rem;
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .content-wrapper {
+        margin-left: 0;
+        padding: 1.5rem 1rem;
+    }
+}
