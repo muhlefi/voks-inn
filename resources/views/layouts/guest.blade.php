@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Voks-Inn') }}</title>
+    <title>Voks Inn</title>
 
     @vite(['resources/js/app.js'])
 </head>
@@ -18,7 +18,7 @@
                         <div class="card-body p-4 p-lg-5">
                             <div class="text-center mb-4">
                                 <div class="display-6 text-primary fw-bold mb-2">
-                                    <i class="fas fa-hotel me-2"></i>{{ config('app.name', 'Voks-Inn') }}
+                                    <i class="fas fa-hotel me-2"></i>Voks Inn
                                 </div>
                                 <p class="text-muted mb-0">Manajemen Hotel - VOKS-INN</p>
                             </div>
